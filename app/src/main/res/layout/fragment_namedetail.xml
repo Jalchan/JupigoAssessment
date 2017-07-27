@@ -1,0 +1,39 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frags.NameDetailFragment"
+    android:background="@android:color/white"
+    android:id="@+id/fragment_mainLayout"
+             android:clickable="true">
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/showcolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:hint="your color" android:textSize="30sp"/>
+    <TextView
+        android:id="@+id/showcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/showcolor"
+        android:layout_centerHorizontal="true"
+        android:hint="your code"
+        android:textSize="30sp"/>
+    <TextView
+        android:id="@+id/showname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/showcode"
+        android:layout_marginBottom="150dp"
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true"
+        android:hint="your name"
+        android:textSize="30sp"/>
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,62 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".frags.Tab1Fragment"
+    android:background="@android:color/white"
+    android:id="@+id/fragment_mainLayout"
+             android:clickable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/selectbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/code" android:layout_alignEnd="@+id/name"
+            android:layout_marginBottom="30dp" android:text="Select Color"/>
+
+        <EditText
+            android:id="@+id/code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="33dp"
+            android:hint="@string/hintcode"
+            android:inputType="numberPassword"/>
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"
+            android:layout_marginBottom="212dp" android:hint="@string/hintname"
+            android:inputType="textPersonName"/>
+
+        <FrameLayout android:layout_width="match_parent"
+                     android:layout_height="200dp"
+                     android:id="@+id/picker"
+                     android:layout_alignParentBottom="true">
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+
+                <Button
+                    android:id="@+id/submitbtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="20dp"
+                    android:text="Submit"/>
+
+            </RelativeLayout>
+        </FrameLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>
